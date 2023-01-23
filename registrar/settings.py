@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'forms',
+    'emails', #app might not be needed
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#email settings
+EMAIL_HOST = 'imap-mail.outlook.com'
+EMAIL_PORT = 993
+EMAIL_HOST_USER = 'dora3649@ravens.benedictine.edu'
+EMAIL_HOST_PASSWORD = 'xxx' #please don't hack into my account, I know who you guys are...
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
