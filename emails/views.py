@@ -16,7 +16,7 @@ def index(request):
     return HttpResponse("Welcome to the email sender! Your email has been sent.")
 
 def sendEmail(to):
-    msg = EmailMessage('IT WORKS!',
-                        'You can read this!',
+    msg = EmailMessage('No-reply Form Submition Confirmation',
+                        'Congradulations, your form has beed submitted! \nPlease view the "Form History" section to veiw your subbmitted form. \n\n - Registrar Portal',
                         to = [to])
     msg.send()
