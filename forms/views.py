@@ -21,3 +21,10 @@ def index(request):
         'recents': recents
         }
     return render(request, 'index.html', context)
+
+def addDropClass(request):
+    user = {'firstname': 'John', 'lastname': 'Doe'}
+    context = {
+        'user': user
+        }
+    return render(request, 'addDropClass.html',context)
