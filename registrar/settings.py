@@ -125,9 +125,11 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #email settings
-EMAIL_HOST = 'imap-mail.outlook.com'
-EMAIL_PORT = 993
-EMAIL_HOST_USER = 'dora3649@ravens.benedictine.edu'
-EMAIL_HOST_PASSWORD = 'xxx' #please don't hack into my account, I know who you guys are...
+DEFAULT_FROM_EMAIL = 'cocoabot11@gmail.com'
+SERVER_EMAIL = 'cocoabot11@gmail.com'
 EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587 #993
+EMAIL_HOST_USER = 'cocoabot11@gmail.com'
+EMAIL_HOST_PASSWORD = 'uoewyrftgdrgeewb' #please don't hack into my account, I know who you guys are...
+#uoewyrftgdrgeewb
