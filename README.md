@@ -9,3 +9,7 @@ and navigate to http://127.0.0.1:8000.
 
 Likewise to reach the form index page, go to http://127.0.0.1:8000/forms.
 
+Progress Made:
+- emails outlined
+- home page created
+
