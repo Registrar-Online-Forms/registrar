@@ -25,7 +25,7 @@ Progress Made:
 
 ## Views
 
-To add a new web page, you first must build out the html template and put it in the forms/templates
+To add a new web page, you first must build out the html template and put it in the forms/templates.
 Next you'll need to add the view to forms/views.py. For example, for a page named dropClass.html, you would have the following code
 
     $ def dropClass(request):
