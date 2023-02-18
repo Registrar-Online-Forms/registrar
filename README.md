@@ -23,7 +23,7 @@ Progress Made:
 
 # Views and URLs
 
-### Views
+## Views
 
 To add a new web page, you first must build out the html template and put it in the forms/templates
 Next you'll need to add the view to forms/views.py. For example, for a page named dropClass.html, you would have the following code
@@ -40,7 +40,7 @@ The context parameter specifies any information that needs to be sent to the pag
 
 This would then show the fname property of the context object. 
 
-### URLs
+## URLs
 
 To add the url of the dropClass.html page, navigate to forms/urls.py. Within the urlpatterns list, you would need to add the path.
 
