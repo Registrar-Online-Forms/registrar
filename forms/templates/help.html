@@ -33,7 +33,7 @@
                             </div>
                         </li>
                         <li class="nav-item ms-2">
-                            <span class="navbar-brand nav-link active">Welcome, {{ user.firstname }}</span>
+                            <span class="navbar-brand nav-link active">Help</span>
                         </li>
                     </ul>
                 </div>
@@ -59,61 +59,96 @@
         </nav>
     </div>
     <!-- End Navbar -->
-    <div class="text-center mt-3">
-        <img class="logo-img" src="../static/imgs/logo_horizontal.png" alt="Benedictine College">
-    </br>
-    <h1>
-        Registrar Forms
-    </h1>
-    </div>
+    <!--Back Arrow-->
     <div class="container">
+        <div class="row ms-1 mt-1">
+            <p class="back"><a href="../forms">&#x2190; Back</a></p>
+        </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="mt-5">Recents</h1>
+                <h1>
+                    Help
+                </h1>
                 <hr>
-                <div class="box">
-                    <div class="row">
-                        <div class="col-12">
-                            <ul>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.one.formType }} </span>| Submitted on: {{ recents.one.submission }} | Status: {{ recents.one.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.two.formType }} </span>| Submitted on: {{ recents.two.submission }} | Status: {{ recents.two.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.three.formType }} </span>| Submitted on: {{ recents.three.submission }} | Status: {{ recents.three.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.four.formType }} </span>| Submitted on: {{ recents.four.submission }} | Status: {{ recents.four.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div>
+                    <h4>
+                        What is this website?
+                    </h4>
+                    <p>
+                        For Informations, see the <a href="info">Info</a> page.
+                    </p>
+                </div><hr>
+                <div>
+                    <h4>
+                        How do I create a form?
+                    </h4>
+                    <p>
+                        There are several ways to create a form. You can click the New Form button in the top right corner and select the form you want to create, or you can navigate to the <a href="new">New Form</a> page by clicking this link or by selecting New Form from the dropdown menu in the top left corner. Then select the form you want to create.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                        How can I view a form I submitted?
+                    </h4>
+                    <p>
+                       You can go to the <a href="#">History</a> page (REDIRECT LINK ONCE CREATED) to view the status of every form you submitted. Then you can click on a form to view it.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                        How will I know when my form has been signed?
+                    </h4>
+                    <p>
+                        You will recieve an email when (Colleen, what exactly are all the triggers for emails being sent?)
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                        How do I fill out a form?
+                    </h4>
+                    <p>
+                        Simply enter all the appropriate information into the form. If you can not find something, you can probably find it in RavenZone, or ask your advisor for help. When you are done, click Submit and the form will automatically be sent to the appropriate person.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                        Who is my advisor?
+                    </h4>
+                    <p>
+                        Hey guys, if advisors are stored in the database, we could Request that and tell the student right here. Wouldn't that be cool?
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                        Why is the footer doing that?
+                    </h4>
+                    <p>
+                        I don't know. Does anyone else know? Will this be a problem on the history page if it gets so long someone needs to scroll down? -Ben
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                       Should the Add/Drop Class form specify whether you're adding or dropping a class?
+                    </h4>
+                    <p>
+                        I thought of this and I think it should. The one in RavenZone does, and also allows to add and drop a class on the same form. - Ben
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h4>
+                        Insert Question Here?
+                    </h4>
+                    <p>
+                        Insert Answer Here. This is a template that is easy to copy and paste, so don't delete it until the site goes live, please!<br>
+                        Tell Ben if you think of any questions to add, or just add them yourself.
+                    </p>
                 </div>
             </div>
         </div>

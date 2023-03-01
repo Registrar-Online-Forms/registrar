@@ -28,3 +28,16 @@ def addDropClass(request):
         'user': user
         }
     return render(request, 'addDropClass.html',context)
+
+def newForm(request):
+    user = {'firstname': 'John'} # This is only needed to show "Welcome [Student]" - Ben
+    context = {
+        'user': user
+        }
+    return render(request, 'newForm.html',context)
+
+def info(request): # So for this page and help I replaced the "Welcome [Student]" greeting to skip having to request anything from the database - Ben
+    return render(request, 'info.html')
+
+def help(request):
+    return render(request, 'help.html')
