@@ -41,3 +41,18 @@ def info(request): # So for this page and help I replaced the "Welcome [Student]
 
 def help(request):
     return render(request, 'help.html')
+
+def history(request):  
+    # Copy/Pasted from Index, replace with actual values once database online
+    user = {'firstname': 'John', 'lastname': 'Doe'}
+    
+    one = {'formType': 'Change Adivsor', 'submission' : '1/23/2023', 'status': 'Pending'}
+    two = {'formType': 'Drop/Add Class', 'submission' : '1/2/2022', 'status': 'Awaiting Registrar Approval'}
+    three = {'formType': 'Drop/Add Class', 'submission' : '12/23/2022', 'status': 'Awaiting Advisor Approval'}
+    four = {'formType': 'Drop/Add Major', 'submission' : '10/10/2022', 'status': 'Complete'}
+    recents = {'one': one, 'two': two, 'three': three, 'four': four}
+    context= {
+        'user': user,
+        'recents': recents
+        }
+    return render(request, 'history.html', context)
