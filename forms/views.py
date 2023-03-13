@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import MyModel
+from .forms import MyForm
 
 # Create your views here.
 
@@ -28,3 +30,11 @@ def addDropClass(request):
         'user': user
         }
     return render(request, 'addDropClass.html',context)
+
+def registrar(request):
+    context = {}
+    return render(request, 'registrar.html',context)
+
+def professor(request):
+    context = {}
+    return render(request, 'professor.html',context)
