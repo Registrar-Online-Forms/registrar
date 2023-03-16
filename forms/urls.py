@@ -8,7 +8,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('addDropClass', views.addDropClass, name='addDropClass'),
     path('new', views.newForm, name='newForm'),
-    path('info', views.info, name='info'),
     path('help', views.help, name='help'),
     path('history', views.history, name='history')
 ]
