@@ -32,7 +32,7 @@
                             </div>
                         </li>
                         <li class="nav-item ms-2">
-                            <span class="navbar-brand nav-link active">Welcome, {{ user.firstname }}</span>
+                            <span class="navbar-brand nav-link active">Info</span>
                         </li>
                     </ul>
                 </div>
@@ -58,59 +58,25 @@
         </nav>
     </div>
     <!-- End Navbar -->
-    <div class="text-center mt-3">
-        <img class="logo-img" src="../static/imgs/logo_horizontal.png" alt="Benedictine College">
-    </br>
-    <h1>
-        Registrar Forms
-    </h1>
-    </div>
     <div class="container">
+        <!--Back Arrow-->
+        <div class="row ms-1 mt-1">
+            <p class="back"><a href="../forms">&#x2190; Back</a></p>
+        </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="mt-5">Recents</h1>
+                <h1>
+                    Informations
+                </h1>
                 <hr>
                 <div class="box">
                     <div class="row">
                         <div class="col-12">
-                            <ul>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.one.formType }} </span>| Submitted on: {{ recents.one.submission }} | Status: {{ recents.one.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.two.formType }} </span>| Submitted on: {{ recents.two.submission }} | Status: {{ recents.two.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.three.formType }} </span>| Submitted on: {{ recents.three.submission }} | Status: {{ recents.three.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <a class="link" href="#">
-                                                <p class="recent-item"><span class="recent-title">{{ recents.four.formType }} </span>| Submitted on: {{ recents.four.submission }} | Status: {{ recents.four.status }}</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <p>
+                                This website contains online versions of all the forms used by the Registrar at Benedictine College. It allows you to easily submit forms to the correct people without having to track them down or figure out who to send it to. For more info, please see the <a href="help">help</a> page.
+                                <hr>
+                                This website was created by Joe Bieker, Colleen Doran, Ben Maruco, and Daniel Wee as their Senior Capstone project.
+                            </p>
                         </div>
                     </div>
                 </div>

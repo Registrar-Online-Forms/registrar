@@ -31,10 +31,30 @@ def addDropClass(request):
         }
     return render(request, 'addDropClass.html',context)
 
-def registrar(request):
-    context = {}
-    return render(request, 'registrar.html',context)
+def newForm(request):
+    user = {'firstname': 'John'} # This is only needed to show "Welcome [Student]" - Ben
+    context = {
+        'user': user
+        }
+    return render(request, 'newForm.html',context)
 
-def professor(request):
-    context = {}
-    return render(request, 'professor.html',context)
+def info(request): # So for this page and help I replaced the "Welcome [Student]" greeting to skip having to request anything from the database - Ben
+    return render(request, 'info.html')
+
+def help(request):
+    return render(request, 'help.html')
+
+def history(request):  
+    # Copy/Pasted from Index, replace with actual values once database online
+    user = {'firstname': 'John', 'lastname': 'Doe'}
+    
+    one = {'formType': 'Change Adivsor', 'submission' : '1/23/2023', 'status': 'Pending'}
+    two = {'formType': 'Drop/Add Class', 'submission' : '1/2/2022', 'status': 'Awaiting Registrar Approval'}
+    three = {'formType': 'Drop/Add Class', 'submission' : '12/23/2022', 'status': 'Awaiting Advisor Approval'}
+    four = {'formType': 'Drop/Add Major', 'submission' : '10/10/2022', 'status': 'Complete'}
+    recents = {'one': one, 'two': two, 'three': three, 'four': four}
+    context= {
+        'user': user,
+        'recents': recents
+        }
+    return render(request, 'history.html', context)
