@@ -1,5 +1,4 @@
 from django.urls import path
-import urllib3
 
 from . import views
 
@@ -8,10 +7,7 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('addDropClass', views.addDropClass, name='addDropClass'),
-    path('registrar', views.registrar, name='registrar'),
-    path('professor', views.professor, name='professor'),
     path('new', views.newForm, name='newForm'),
     path('help', views.help, name='help'),
     path('history', views.history, name='history')
 ]
-

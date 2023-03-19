@@ -1,6 +1,4 @@
 from django.shortcuts import render
-from .models import MyModel
-from .forms import MyForm
 
 # Create your views here.
 

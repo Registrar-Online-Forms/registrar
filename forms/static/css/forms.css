@@ -63,10 +63,3 @@ a:hover {
     font-size: large;
     border: none !important;
 }
-.grey-out {
-    color: #aaa !important;
-    background-color: #aaa;
-}
-.sig {
-    font-family: cursive;
-}
