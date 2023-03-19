@@ -1,0 +1,28 @@
+/* red: #b20838 */
+/* black #0b0906 */
+/* grey: #99999d */
+
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+.link {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+.recent-title {
+    font-weight: bold;
+}
+.footer-text {
+    color: #d0d0d0 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
