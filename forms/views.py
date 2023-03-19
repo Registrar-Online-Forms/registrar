@@ -38,10 +38,7 @@ def newForm(request):
         }
     return render(request, 'newForm.html',context)
 
-def info(request): # So for this page and help I replaced the "Welcome [Student]" greeting to skip having to request anything from the database - Ben
-    return render(request, 'info.html')
-
-def help(request):
+def help(request): # So for this page I replaced the "Welcome [Student]" greeting to skip having to request anything from the database - Ben
     return render(request, 'help.html')
 
 def history(request):  
