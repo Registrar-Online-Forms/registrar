@@ -64,8 +64,9 @@ a:hover {
     border: none !important;
 }
 .grey-out {
-    color: #aaa !important;
-    background-color: #aaa;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
 }
 .sig {
     font-family: cursive;

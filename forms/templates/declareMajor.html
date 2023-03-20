@@ -18,24 +18,12 @@
                     <img class="logo-img" src="../static/imgs/logo_horizontal.png" alt="Benedictine College">
                 </div>
                 <div class="text-center">
-                    <h1 class="text-center mt-5">Add/Drop a Class</h1>
-                    <p class="text-center">Please fill out the form below to add or drop a class.</p>
+                    <h1 class="text-center mt-5">Declare Major</h1>
+                    <p class="text-center">Please fill out the form below to declare a major.</p>
                     <div class="form text-center mb-5">
                         <!-- START OF FORM-->
                         <form action="/submit/">
-                            <input type="hidden" name="form" value="addDropClass">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                            <option selected>Select...</option>
-                                            <option value="Add">Add</option>
-                                            <option value="Drop">Drop</option>
-                                        </select>
-                                        <label for="floatingSelect">Add or Drop</label>
-                                    </div>
-                                </div>
-                            </div>
+                            <input type="hidden" name="form" value="declareMajor">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
@@ -73,9 +61,9 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
-                                        <input id="classCode" type="text" class="form-control" maxlength="11" minlength="11">
-                                        <label for="classCode">Course Number</label>
-                                        <p class="small text-start grey-out ms-3">i.e. ENGL-1010-A</p>
+                                        <input id="catalogYear" type="number" class="form-control" min="2018" max="{{ date.year }}">
+                                        <label for="catalogYear">Catalog Year</label>
+                                        <p class="grey-out text-start ms-3">Year you were a freshman.</p>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +89,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="text" class="sig form-control" id="sSignature" style="font-family: cursive;">
                                         <label for="sSignature">Student Signature</label>
-                                        <p class="small text-start grey ms-3"></p>
+                                        <p class="small text-start gray-out ms-3"></p>
                                     </div>
                                 </div>
                             </div>
