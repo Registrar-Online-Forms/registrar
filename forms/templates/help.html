@@ -24,10 +24,8 @@
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                 <li><a class="dropdown-item" href="../forms">Home Page</a></li>
-                                <li><a class="dropdown-item" href="#">Pending Forms</a></li>
-                                <li><a class="dropdown-item" href="#">Completed Forms</a></li> <!--Combine pending and complete into one History page-->
+                                <li><a class="dropdown-item" href="history">Form History</a></li> <!--Combine pending and complete into one History page-->
                                 <li><a class="dropdown-item" href="new">New Form</a></li> <!--Separate page to create a new form, have links to different form types-->
-                                <li><a class="dropdown-item" href="info">Info Page</a></li> <!--Info-->
                                 <li><a class="dropdown-item" href="help">Help</a></li> <!--Include FAQ, how to use the site-->
                                 </ul>
                             </div>
@@ -61,8 +59,8 @@
     <!-- End Navbar -->
     <!--Back Arrow-->
     <div class="container">
-        <div class="row ms-1 mt-1">
-            <p class="back"><a href="../forms">&#x2190; Back</a></p>
+        <div class="row mt-5">
+            <!-- adds space between header and "help" -->
         </div>
         <div class="row">
             <div class="col-12">
@@ -75,7 +73,8 @@
                         What is this website?
                     </h4>
                     <p>
-                        For Informations, see the <a href="info">Info</a> page.
+                        This website contains online versions of all the forms used by the Registrar at Benedictine College. It allows you to easily submit forms to the correct people without having to track them down or figure out who to send it to.<br>
+                        This website was created by Joe Bieker, Colleen Doran, Ben Maruco, and Daniel Wee as their Senior Capstone project. (Cosider moving the credits note to the bottom but I don't feel like it right now -Ben)
                     </p>
                 </div><hr>
                 <div>
@@ -83,7 +82,7 @@
                         How do I create a form?
                     </h4>
                     <p>
-                        There are several ways to create a form. You can click the New Form button in the top right corner and select the form you want to create, or you can navigate to the <a href="new">New Form</a> page by clicking this link or by selecting New Form from the dropdown menu in the top left corner. Then select the form you want to create.
+                        There are several ways to create a form. You can click the New Form button in the top right corner and select the form you want to fill out, or you can navigate to the <a href="new">New Form</a> page by clicking this link or by selecting New Form from the dropdown menu in the top left corner. Then select the form you want to fill out.
                     </p>
                 </div>
                 <hr>
@@ -92,7 +91,7 @@
                         How can I view a form I submitted?
                     </h4>
                     <p>
-                       You can go to the <a href="#">History</a> page (REDIRECT LINK ONCE CREATED) to view the status of every form you submitted. Then you can click on a form to view it.
+                       You can go to the <a href="history">History</a> page to view the status of every form you submitted. Then you can click on a form to view it.
                     </p>
                 </div>
                 <hr>
@@ -101,7 +100,7 @@
                         How will I know when my form has been signed?
                     </h4>
                     <p>
-                        You will recieve an email when (Colleen, what exactly are all the triggers for emails being sent?)
+                        You will recieve an email when your professor has signed the form and submitted it to the Registrar to review.
                     </p>
                 </div>
                 <hr>
@@ -110,7 +109,7 @@
                         How do I fill out a form?
                     </h4>
                     <p>
-                        Simply enter all the appropriate information into the form. If you can not find something, you can probably find it in RavenZone, or ask your advisor for help. When you are done, click Submit and the form will automatically be sent to the appropriate person.
+                        Simply enter all the appropriate information into the form. If you can not find something, you can look in RavenZone under "Student Self-Service", or ask your advisor for help. When you are done, click Submit and the form will automatically be sent to the appropriate person. (Daniel, is that something we can do if would it be better if the students put the email address in instead of hardcoding the path in -C)
                     </p>
                 </div>
                 <hr>
@@ -119,16 +118,7 @@
                         Who is my advisor?
                     </h4>
                     <p>
-                        Hey guys, if advisors are stored in the database, we could Request that and tell the student right here. Wouldn't that be cool?
-                    </p>
-                </div>
-                <hr>
-                <div>
-                    <h4>
-                        Why is the footer doing that?
-                    </h4>
-                    <p>
-                        I don't know. Does anyone else know? Will this be a problem on the history page if it gets so long someone needs to scroll down? -Ben
+                        Hey guys, if advisors are stored in the database, we could Request that and tell the student right here. Wouldn't that be cool? -Ben (That would be so cool. Does it say anywhere on RavenZone? I was looking but couldn't find it. -C)
                     </p>
                 </div>
                 <hr>
@@ -137,28 +127,40 @@
                        Should the Add/Drop Class form specify whether you're adding or dropping a class?
                     </h4>
                     <p>
-                        I thought of this and I think it should. The one in RavenZone does, and also allows to add and drop a class on the same form. - Ben
+                        I thought of this and I think it should. The one in RavenZone does, and also allows to add and drop a class on the same form. - Ben (I would thinks so, mirroring the original as much as possible -C)
                     </p>
                 </div>
-                <hr>
+                <!-- <hr>
                 <div>
                     <h4>
                         Insert Question Here?
                     </h4>
                     <p>
-                        Insert Answer Here. This is a template that is easy to copy and paste, so don't delete it until the site goes live, please!<br>
+                        Insert Answer Here. This is a template that is easy to copy and paste, then replace the text and uncomment!
                         Tell Ben if you think of any questions to add, or just add them yourself.
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
+        <div class="row mt-5">
+            <!-- adds space for footer at end of page -->
+        </div>
     </div>
-    <div class="footer">
+    <footer class="page-footer text-center fixed-bottom">
+        <div class="row">
+            <!-- <div class="col-12 text-center"> -->
+                <p class="footer-text">Benedictine College | 2023 | Version: 0.0.5 | Last updated 3/15/2023</p>
+            <!-- </div> -->
+        </div>
+    </footer>
+
+    <!-- old footer in case we need to revert back -->
+    <!-- <div class="footer">
         <div class="row">
             <div class="col-12 text-center">
-                <p class="footer-text">Benedictine College | 2023 | Version: 0.0.4 | Last updated 3/1/2023</p>
+                <p class="footer-text">Benedictine College | 2023 | Version: 0.0.5 | Last updated 3/15/2023</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
