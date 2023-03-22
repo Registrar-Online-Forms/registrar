@@ -4,6 +4,21 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
+def signUp(request):
+    #TO DO
+    user = {'firstname': 'John', 'lastname': 'Doe'}
+    context = {
+        'user': user
+        }
+    return render(request, 'signUp.html', context)
+
+def login(request):
+    #TO DO
+    user = {'firstname': 'John', 'lastname': 'Doe'}
+    context = {
+        'user': user
+        }
+    return render(request, 'login.html', context)
 
 def index(request):
     # user is an object variable with firstname and lastname attributes
