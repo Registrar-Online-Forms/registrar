@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.mail import EmailMessage
 
 # Email Sender
-#Plcaeholder until form functions are implemented
+#Placeholder until form functions are implemented
 from django.http import HttpResponse
 from datetime import datetime
 
@@ -32,7 +32,7 @@ def sendFormSubmitEmail(recipients, formType, submitID, sentTo):
                         to = recipients)
     msg.send()
 
-def sendSignitureRecievedEmail(recipients, formType, submitID): # to is email address recieving the email
+def sendSignitureRecievedEmail(recipients, formType, submitID):
     now = datetime.now() #clock
     # mm/dd/YY H:M:S
     dt_string = now.strftime("%m/%d/%Y %H:%M:%S") #gets time
@@ -47,7 +47,7 @@ def sendSignitureRecievedEmail(recipients, formType, submitID): # to is email ad
                         to = recipients)
     msg.send()
 
-def sendAlertEmail(recipients, submitID): # to is email address recieving the email
+def sendAlertEmail(recipients, submitID):
     msg = EmailMessage('No-reply New Form Notification',
                         '''There has been a new form submitted to you that requires your attention. 
                         \nPlease view the "Pending Forms" section to veiw this form. \n
