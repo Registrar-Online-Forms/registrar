@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from registrar.settings.base import inProductionMode
 
 # Create your views here.
 
@@ -34,7 +35,8 @@ def index(request):
     recents = {'one': one, 'two': two, 'three': three, 'four': four}
     context= {
         'user': user,
-        'recents': recents
+        'recents': recents,
+        'inProductionMode': inProductionMode()
         }
     return render(request, 'index.html', context)
 

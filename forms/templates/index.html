@@ -27,7 +27,15 @@
                                 <li><a class="dropdown-item" href="history">Form History</a></li> <!--Combine pending and complete into one History page-->
                                 <li><a class="dropdown-item" href="new">New Form</a></li> <!--Separate page to create a new form, have links to different form types-->
                                 <li><a class="dropdown-item" href="help">Help</a></li> <!--Include FAQ, how to use the site-->
-                                </ul>
+                                {% if inProductionMode == True %} 
+                                {% comment %}
+                                    set the above value to True for production mode and False for development mode
+                                {% endcomment %}
+                                <li class="logout">
+                                    <a class="logout-button" aria-current="page" href="{% url 'django_auth_adfs:logout' %}">Logout</a>
+                                </li>
+                                {% endif %}
+                            </ul>
                             </div>
                         </li>
                         <li class="nav-item ms-2">
