@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from registrar.settings.base import inProductionMode
 
 urlpatterns = [
     path('forms/', include('forms.urls')),
     path('admin/', admin.site.urls),
     path('emails/', include('emails.urls')),
 ]
+
+if(inProductionMode() == True):
+    urlpatterns.append(path('oauth2/', include('django_auth_adfs.urls')))

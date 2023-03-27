@@ -2,11 +2,13 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from registrar.settings.base import inProductionMode
 
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'registrar.settings')
+    settingString = "production" if inProductionMode() == True else "development"
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', f'registrar.settings.{settingString}')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
