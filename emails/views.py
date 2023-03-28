@@ -32,7 +32,7 @@ def sendFormSubmitEmail(recipients, formType, submitID, sentTo):
                         to = recipients)
     msg.send()
 
-def sendSignitureRecievedEmail(recipients, formType, submitID):
+def sendSignitureRecievedEmail(recipients, formType, submitID): #test
     now = datetime.now() #clock
     # mm/dd/YY H:M:S
     dt_string = now.strftime("%m/%d/%Y %H:%M:%S") #gets time
