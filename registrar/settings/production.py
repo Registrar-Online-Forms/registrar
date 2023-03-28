@@ -31,7 +31,7 @@ SECURE_SSL_REDIRECT = True
 
 INSTALLED_APPS.append('django_auth_adfs')
 
-with open(BASE_DIR / ".." / "awrtgw4ehtrdnhhsrghej56_AuthADFSInformation.txt") as f:
+with open(BASE_DIR / ".." / ".." / "awrtgw4ehtrdnhhsrghej56_AuthADFSInformation.txt") as f:
     # Note: Make sure each of the following things is on one line of the ADFS info file 
     #           and is parsed correctly (e.g. if it should be parsed as a list, do so)
     authADFSInfo = f.read().strip().split("\n")
