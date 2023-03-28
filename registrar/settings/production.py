@@ -12,7 +12,7 @@ ALLOWED_HOSTS = ['registrarportal.benedictine.edu']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / '..' / 'production_db.sqlite3',
+        'NAME': BASE_DIR / '..' / '..' / 'production_db.sqlite3',
     }
 }
 
@@ -21,7 +21,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open(BASE_DIR / ".." / "svauwkrhwbioa_secretKey.txt") as f:
+with open(BASE_DIR / ".." / ".." / "svauwkrhwbioa_secretKey.txt") as f:
     SECRET_KEY = f.read().split("\n")[0]
 
 # From Django: Using a secure-only CSRF cookie makes it more difficult for network traffic sniffers to steal the CSRF token.
