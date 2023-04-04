@@ -19,7 +19,7 @@
                     <p class="text-center">Please fill out the form below to access registrar forms.</p>
                     <div class="form text-center mb-5">
                         <!-- START OF FORM-->
-                        <form action="/submit/"><!--<form method="POST" action={% url 'signUp' %}>-->  
+                        <form method="POST" action="{% url 'signUp' %}">
                         <!--keep hackers out-->
                         {% csrf_token %}
                             <input type="hidden" name="signUp" value="signUp">
@@ -58,7 +58,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="" name="password">
+                                        <input type="password" class="form-control" id="floatingInput" placeholder="" name="passwrd">
                                         <label for="floatingInput">Password</label>
                                     </div>
                                 </div>

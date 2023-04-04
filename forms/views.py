@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from registrar.settings.base import inProductionMode
+from .models import User
+from .forms import UserForm
 
 # Create your views here.
 
@@ -7,12 +9,13 @@ from django.http import HttpResponse
 import datetime
 
 def signUp(request):
-    #TO DO
-    user = {'firstname': 'John', 'lastname': 'Doe'}
-    context = {
-        'user': user
-        }
-    return render(request, 'signUp.html', context)
+    if request.method == "POST":
+        form = UserForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+        return render(request, 'signUp.html', {})
+    else:
+        return render(request, 'signUp.html', {})
 
 def login(request):
     #TO DO
