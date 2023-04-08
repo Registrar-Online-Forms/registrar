@@ -24,4 +24,4 @@ urlpatterns = [
 ]
 
 if(inProductionMode() == True):
-    urlpatterns.append(path('oauth2/', include('django_auth_adfs.drf_urls')))
+    #urlpatterns.append(path('oauth2/', include('django_auth_adfs.drf_urls')))
