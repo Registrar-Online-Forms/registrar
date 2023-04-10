@@ -21,6 +21,7 @@ urlpatterns = [
     path('forms/', include('forms.urls')),
     path('admin/', admin.site.urls),
     path('emails/', include('emails.urls')),
+    path('index/')
 ]
 
 if(inProductionMode() == True):
