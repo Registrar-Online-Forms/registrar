@@ -25,5 +25,5 @@ urlpatterns = [
 ]
 
 if(inProductionMode() == True):
-    urlpatterns.append(path('oauth2/', include('forms.urls')))
+    urlpatterns.append(path('oauth2/', include('django_auth_adfs.urls')))
     #django_auth_adfs is not a registered namespace
