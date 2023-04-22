@@ -60,15 +60,12 @@ LOGIN_REDIRECT_URL = "forms/index" #subject to change
     #
     # You can specify URLs for which login is not enforced by
     # specifying them in the LOGIN_EXEMPT_URLS setting.
-<<<<<<< Updated upstream
 print("Appending to middleware.")
 MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
 
 print("Writing some rest framework or something.")
-=======
 MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
 
->>>>>>> Stashed changes
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
@@ -77,8 +74,4 @@ REST_FRAMEWORK = {
         'django_auth_adfs.rest_framework.AdfsAccessTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     )
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
