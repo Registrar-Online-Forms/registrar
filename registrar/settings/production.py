@@ -60,6 +60,7 @@ LOGIN_REDIRECT_URL = "forms/index" #subject to change
     #
     # You can specify URLs for which login is not enforced by
     # specifying them in the LOGIN_EXEMPT_URLS setting.
+<<<<<<< Updated upstream
 print("Appending to middleware.")
 MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
 
