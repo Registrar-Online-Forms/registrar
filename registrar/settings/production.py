@@ -64,6 +64,10 @@ print("Appending to middleware.")
 MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
 
 print("Writing some rest framework or something.")
+=======
+MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
+
+>>>>>>> Stashed changes
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
@@ -72,4 +76,8 @@ REST_FRAMEWORK = {
         'django_auth_adfs.rest_framework.AdfsAccessTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     )
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
