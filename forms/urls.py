@@ -6,7 +6,7 @@ from . import views
 # usage: path('the name of the page in the url', where to find the page in views.py, the name of the page)
 
 urlpatterns = [
-    path('', views.signUp, name='signUp'),
+    path('', views.index, name='index'), #changed signup to index for demonstration. Also, signin should be done by ravenzone login so it shouldn't be needed.
     path('signUp', views.signUp, name='signUp'),
     path('login', views.login, name='login'),
     path('index', views.index, name='index'),
