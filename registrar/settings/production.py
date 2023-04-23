@@ -16,10 +16,8 @@ DATABASES = {
     }
 }
 
-print("Writing Authentication backends")
 AUTHENTICATION_BACKENDS = [
-    'django_auth_adfs.backend.AdfsAuthCodeBackend',
-    'django_auth_adfs.backend.AdfsAccessTokenBackend',
+    'django_auth_adfs.backend.AdfsAuthCodeBackend'
 ]
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -60,18 +58,4 @@ LOGIN_REDIRECT_URL = "forms/index" #subject to change
     #
     # You can specify URLs for which login is not enforced by
     # specifying them in the LOGIN_EXEMPT_URLS setting.
-print("Appending to middleware.")
 MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
-
-print("Writing some rest framework or something.")
-MIDDLEWARE.append('django_auth_adfs.middleware.LoginRequiredMiddleware')
-
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-    ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'django_auth_adfs.rest_framework.AdfsAccessTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-    )
-}

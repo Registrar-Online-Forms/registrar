@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'forms',
-    'emails', #app might not be needed
+    'emails', #app might not be needed, email methods could be moved to where they are needed. Developed here to not interfear with other developers
 ]
 
 MIDDLEWARE = [
@@ -48,7 +48,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_auth_adfs.middleware.LoginRequiredMiddleware',
 ]
 
 ROOT_URLCONF = 'registrar.urls'
@@ -129,7 +128,7 @@ DEFAULT_FROM_EMAIL = 'cocoabot11@gmail.com'
 SERVER_EMAIL = 'cocoabot11@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587 #993
+EMAIL_PORT = 587 
 EMAIL_HOST_USER = 'cocoabot11@gmail.com'
 EMAIL_HOST_PASSWORD = 'uoewyrftgdrgeewb' #please don't hack into my account, I know who you guys are...
 
